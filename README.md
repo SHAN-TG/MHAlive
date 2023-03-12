@@ -20,9 +20,8 @@ DEPLOY TO HEROKU
 </p>
 </details>
 
-
-
-
+# Deploy
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/9XGF4o)
 
 
 
