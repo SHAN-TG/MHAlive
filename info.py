@@ -1,36 +1,31 @@
 # Bot information
-API_ID = int(7538843)
-API_HASH = "9c1f4ab1c1db2ebdb18d48e4257d2074"
-BOT_TOKEN = "2077834181:AAFUUxI5vtSg1YXte-xJlzzTKuD4_k2-s_0"
+API_ID = int(4517299)
+API_HASH = "9b858e155aaa571e7bad52e64dace55a"
+BOT_TOKEN = "5842984661:AAHhQptbY9M-NVKf3MDl1mOt5NB2ZbN6hNE"
 
 # Bot settings
 USE_CAPTION_FILTER = True 
 PICS = ["https://graph.org/file/6b5b947f67b2a04977e31.jpg"]
 
 # Admins, Channels & Users
-ADMINS = [1872853375, 1993953092]
-CHANNELS = int(-1001771962158)
-AUTH_CHANNEL = int(-1001774403772)
+ADMINS = [5368018929, 1620134746]
+CHANNELS = int(-1001540443335)
+AUTH_CHANNEL = int(-1001582264222)
 
 
 # MongoDB information
-DATABASE_URI = "mongodb+srv://tinson:tinson@cluster0.x6pcf.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
-DATABASE_NAME = "LuciferMoringstar_Robot"
+DATABASE_URI = "mongodb+srv://xerake2900:xerake2900@cluster0.wwdk1do.mongodb.net/?retryWrites=true&w=majority"
+DATABASE_NAME = "TGM4Ubot"
 
-DATABASE_URI_2 = "mongodb+srv://tinson:tinson@cluster0.2flr9.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
-DATABASE_NAME_2 = "LuciferMoringstar_Robot"
+DATABASE_URI_2 = "mongodb+srv://vidim59341:vidim59341@cluster0.vrly1ko.mongodb.net/?retryWrites=true&w=majority"
+DATABASE_NAME_2 = "TGM4Ubot"
 COLLECTION_NAME_2 = "Telegram_files"
 
 # Others
-LOG_CHANNEL = int(-1001679384751)
-SUPPORT_CHAT = "TinsonTs"
+LOG_CHANNEL = int(-1001501704586)
+SUPPORT_CHAT = "MoviesHub_Discuss"
 
-CUSTOM_FILE_CAPTION = """<code>{file_name}</code>
-
-Join ⚡️
-<a href=https://t.me/TinsonTs>[CINEMAPRANTHAN]</a>
-<a href=https://t.me/TinsonTs>[OTT MOVIES]</a>
-<a href=https://t.me/TinsonTs>[CONFERENCE HALL]</a>"""
+CUSTOM_FILE_CAPTION = """<code>{file_name}</code>"""
 
 SPELL_CHECK_REPLY = False
 
