@@ -342,7 +342,7 @@ async def pm_auto_filter(client, msg):
         key = f"{message.chat.id}-{message.id}"
         PM_BUTTONS[key] = search
         req = message.from_user.id if message.from_user else 0
-        btn.append([InlineKeyboardButton(text=f"🎭 1/{round(int(total_results) / 10)}", callback_data="pages"), InlineKeyboardButton(text="𝐍𝐄𝐗𝐓 ⏩", callback_data=f"pmnext_{req}_{key}_{offset}")])
+        btn.append([InlineKeyboardButton(text=f"🎭 1/{round(int(total_results) / 10)}", callback_data="pages"), InlineKeyboardButton(text="ɴᴇxᴛ", callback_data=f"pmnext_{req}_{key}_{offset}")])
     else:
         btn.append( [InlineKeyboardButton(text="🎭 1/1", callback_data="pages")])    
     cap = f"Here is what i found for your query {search}"
