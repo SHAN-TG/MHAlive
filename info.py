@@ -5,7 +5,7 @@ BOT_TOKEN = "5842984661:AAHhQptbY9M-NVKf3MDl1mOt5NB2ZbN6hNE"
 
 # Bot settings
 USE_CAPTION_FILTER = True 
-PICS = ["https://graph.org/file/6b5b947f67b2a04977e31.jpg"]
+PICS = ["https://graph.org/file/3a1aa1ef5e9ffae83b6c8.jpg"]
 
 # Admins, Channels & Users
 ADMINS = [5368018929, 1620134746]
