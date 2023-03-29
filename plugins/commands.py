@@ -22,16 +22,10 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('➕ 𝐀𝐃𝐃 𝐌𝐄 𝐓𝐎 𝐘𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏 ➕', url=f'http://t.me/{client.username}?startgroup=true')
+            InlineKeyboardButton('➕ ADD ME TO YOUR GROUP ➕', url=f'http://t.me/{client.username}?startgroup=true')
         ], [
-            InlineKeyboardButton('⭕️ 𝐌𝐎𝐕𝐈𝐄𝐒', url='https://t.me/cinemapranthangroup'),
-            InlineKeyboardButton('𝐒𝐄𝐑𝐈𝐄𝐒 ⭕️', url='https://t.me/cinemapranthangroup')
-        ], [
-            InlineKeyboardButton('⭕️ 𝐂𝐇𝐀𝐍𝐍𝐄𝐋', url='https://t.me/TinsonTs'),
-            InlineKeyboardButton('𝐆𝐑𝐎𝐔𝐏 ⭕️', url='https://t.me/cinemapranthangroup')
-        ], [
-            InlineKeyboardButton('⭕️ 𝐇𝐄𝐋𝐏', callback_data='help'),
-            InlineKeyboardButton('𝐀𝐁𝐎𝐔𝐓 ⭕️', callback_data='about')
+            InlineKeyboardButton('HELP', callback_data='help'),
+            InlineKeyboardButton('ABOUT', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
