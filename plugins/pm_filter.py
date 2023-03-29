@@ -205,12 +205,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('➕ 𝐀𝐃𝐃 𝐌𝐄 𝐓𝐎 𝐘𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏 ➕', url=f'http://t.me/{client.username}?startgroup=true')
             ],[
-            InlineKeyboardButton('⭕️ 𝐌𝐎𝐕𝐈𝐄𝐒', url='https://t.me/cinemapranthangroup'),
-            InlineKeyboardButton('𝐒𝐄𝐑𝐈𝐄𝐒 ⭕️', url='https://t.me/cinemapranthangroup')
-            ],[
-            InlineKeyboardButton('⭕️ 𝐂𝐇𝐀𝐍𝐍𝐄𝐋', url='https://t.me/TinsonTs'),
-            InlineKeyboardButton('𝐆𝐑𝐎𝐔𝐏 ⭕️', url='https://t.me/cinemapranthangroup')
-            ],[
             InlineKeyboardButton('⭕️ 𝐇𝐄𝐋𝐏', callback_data='help'),
             InlineKeyboardButton('𝐀𝐁𝐎𝐔𝐓 ⭕️', callback_data='about')
         ]]
@@ -223,8 +217,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer('°°°°')
     elif query.data == "help":
         buttons = [[            
-            InlineKeyboardButton('𝐀𝐔𝐓𝐎 𝐅𝐈𝐋𝐓𝐄𝐑', callback_data='autofilter')
-            ],[
             InlineKeyboardButton('🏠 𝐇𝐎𝐌𝐄', callback_data='start'),
             InlineKeyboardButton('🔮 𝐒𝐓𝐀𝐓𝐔𝐒', callback_data='stats')
         ]]
@@ -257,17 +249,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text=script.SOURCE_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-        )
-    elif query.data == "autofilter":
-        buttons = [[
-            InlineKeyboardButton('👩‍🦯 𝐁𝐀𝐂𝐊', callback_data='help')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.AUTOFILTER_TXT,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )   
+        ) 
     elif query.data == "stats":
         buttons = [[
             InlineKeyboardButton('👩‍🦯 𝐁𝐀𝐂𝐊', callback_data='help'),
