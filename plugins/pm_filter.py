@@ -203,10 +203,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer("കൗതുകം അല്പം കൂടുതലാണല്ലേ 🤨", show_alert=True)
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('➕ 𝐀𝐃𝐃 𝐌𝐄 𝐓𝐎 𝐘𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏 ➕', url=f'http://t.me/{client.username}?startgroup=true')
+            InlineKeyboardButton('➕ ADD ME TO YOUR GROUP  ➕', url=f'http://t.me/{client.username}?startgroup=true')
             ],[
-            InlineKeyboardButton('⭕️ 𝐇𝐄𝐋𝐏', callback_data='help'),
-            InlineKeyboardButton('𝐀𝐁𝐎𝐔𝐓 ⭕️', callback_data='about')
+            InlineKeyboardButton('HELP', callback_data='help'),
+            InlineKeyboardButton('ABOUT', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -217,8 +217,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer('°°°°')
     elif query.data == "help":
         buttons = [[            
-            InlineKeyboardButton('🏠 𝐇𝐎𝐌𝐄', callback_data='start'),
-            InlineKeyboardButton('🔮 𝐒𝐓𝐀𝐓𝐔𝐒', callback_data='stats')
+            InlineKeyboardButton('🏠 HOME', callback_data='start'),
+            InlineKeyboardButton('🔮 STATUS', callback_data='stats')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -228,11 +228,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('👮‍♂️ 𝐌𝐀𝐈𝐍𝐓𝐀𝐈𝐍𝐄𝐑', url='http://t.me/TinsonThomas_22'),
-            InlineKeyboardButton('♥️ 𝐒𝐎𝐔𝐑𝐂𝐄', callback_data='source')
-        ], [
-            InlineKeyboardButton('🏠 𝐇𝐎𝐌𝐄', callback_data='start'),
-            InlineKeyboardButton('🔐 𝐂𝐋𝐎𝐒𝐄', callback_data='close_data')
+            InlineKeyboardButton('🏠 HOME', callback_data='start'),
+            InlineKeyboardButton('🔐 CLOSE', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -240,10 +237,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-    elif query.data == "source":
-        buttons = [[
-            InlineKeyboardButton('👩‍🦯 𝐁𝐀𝐂𝐊', callback_data='about')
-        ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.SOURCE_TXT,
@@ -252,7 +245,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ) 
     elif query.data == "stats":
         buttons = [[
-            InlineKeyboardButton('👩‍🦯 𝐁𝐀𝐂𝐊', callback_data='help'),
+            InlineKeyboardButton('👩‍🦯 BACK', callback_data='help'),
             InlineKeyboardButton('♻️', callback_data='rfrsh')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -271,7 +264,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "rfrsh":
         await query.answer("Fetching MongoDb DataBase")
         buttons = [[
-            InlineKeyboardButton('👩‍🦯 𝐁𝐀𝐂𝐊', callback_data='help'),
+            InlineKeyboardButton('👩‍🦯 BACK', callback_data='help'),
             InlineKeyboardButton('♻️', callback_data='rfrsh')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
