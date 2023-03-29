@@ -1,29 +1,23 @@
 class script(object):
-    START_TXT = """𝙷𝙴𝙻𝙾 {},
-𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 {}, 𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙼𝙾𝚅𝙸𝙴𝚂, 𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙴𝙽𝙹𝙾𝚈 😍"""
+    START_TXT = """Hᴇʟʟᴏ {},
+Mʏ Nᴀᴍᴇ ɪs {}, I Cᴀɴ Pʀᴏᴠɪᴅᴇ Mᴏᴠɪᴇs, Jᴜsᴛ ➕ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ➕ Aɴᴅ Eɴᴊᴏʏ 😍"""
     HELP_TXT = """𝙷𝙴𝚈 {}
-𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
-    ABOUT_TXT = """✯ 𝙼𝚈 𝙽𝙰𝙼𝙴: {}
-✯ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: <a href=https://t.me/TinsonThomas_22>CINEMAPRANTHAN_S™ - Tinson</a>
-✯ 𝙻𝙸𝙱𝚁𝙰𝚁𝚈: KERALA TELEGRAM LIBRARY
-✯ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴: നല്ല പച്ച മംഗ്ലീഷ് 
-✯ 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴: എന്റെ ഫയൽസുകൾ എന്റെ സ്വായകാര്യതയാണ് 
-✯ 𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁: QUILON(KOLLAM)
-✯ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: സപ്തതി ആവാറായി """
-    SOURCE_TXT = """<b>NOTE:</b>
-- Tinson Sir is a open source project. 
-- Source -  നിങ്ങൾക്ക് ബിരിയാണി വേണോ
+For Help Check Buttons Below...!."""
+    ABOUT_TXT = """➲ Mʏ Nᴀᴍᴇ: {}
+➲ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: <a href=https://t.me/SHAN_TG>MOVIES HUB</a>
+➲ 𝙻𝙸𝙱𝚁𝙰𝚁𝚈: <a href=https://docs.pyrogram.org/>Pyrogram</a>
+➲ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴: Python3
+➲ 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴: <a href=https://www.mongodb.com/>MongoDB</a>
+➲ 𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁: <a href=https://railway.app/dashboard/>Railway</a>
+➲ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: V2 """
 
-<b>DEVS:</b>
-- <a href=https://t.me/TinsonThomas_22> CINEMAPRANTHAN_S™ - Tinson</a>"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
 - Filter is the feature were users can set automated replies for a particular keyword and EvaMaria will respond whenever a keyword is found the message
 
 <b>NOTE:</b>
-1. Tinson Sir should have admin privillage.
-2. only admins can add filters in a chat.
-3. alert buttons have a limit of 64 characters.
+1. only admins can add filters in a chat.
+2. alert buttons have a limit of 64 characters.
 
 <b>Commands and Usage:</b>
 • /filter - <code>add a filter in chat</code>
