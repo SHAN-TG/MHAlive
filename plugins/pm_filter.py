@@ -57,20 +57,20 @@ async def next_page(bot, query):
         off_set = offset - 10
     if n_offset == 0:
         btn.append(
-            [InlineKeyboardButton("⏪ 𝐁𝐀𝐂𝐊", callback_data=f"next_{req}_{key}_{off_set}"),
-             InlineKeyboardButton(f"📃 𝐓𝐇𝐄 𝐄𝐍𝐃 {round(int(offset) / 10) + 1} / {round(total / 10)}",
+            [InlineKeyboardButton("ʙᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"),
+             InlineKeyboardButton(f"⌧ Tʜᴇ Eɴᴅ {round(int(offset) / 10) + 1} / {round(total / 10)}",
                                   callback_data="pages")]
         )
     elif off_set is None:
         btn.append(
-            [InlineKeyboardButton(f"🗓 {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
-             InlineKeyboardButton("𝐍𝐄𝐗𝐓 ⏩", callback_data=f"next_{req}_{key}_{n_offset}")])
+            [InlineKeyboardButton(f"🎭 {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
+             InlineKeyboardButton("ɴᴇxᴛ", callback_data=f"next_{req}_{key}_{n_offset}")])
     else:
         btn.append(
             [
-                InlineKeyboardButton("⏪ 𝐁𝐀𝐂𝐊", callback_data=f"next_{req}_{key}_{off_set}"),
-                InlineKeyboardButton(f"🗓 {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
-                InlineKeyboardButton("𝐍𝐄𝐗𝐓 ⏩", callback_data=f"next_{req}_{key}_{n_offset}")
+                InlineKeyboardButton("ʙᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"),
+                InlineKeyboardButton(f"🎭 {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
+                InlineKeyboardButton("ɴᴇxᴛ", callback_data=f"next_{req}_{key}_{n_offset}")
             ],
         )
     try:
@@ -115,20 +115,20 @@ async def pm_next_page(bot, query):
         off_set = offset - 10
     if n_offset == 0:
         btn.append(
-            [InlineKeyboardButton("⏪ 𝐁𝐀𝐂𝐊", callback_data=f"pmnext_{req}_{key}_{off_set}"),
-             InlineKeyboardButton(f"📃 𝐓𝐇𝐄 𝐄𝐍𝐃 {round(int(offset) / 10) + 1} / {round(total / 10)}",
+            [InlineKeyboardButton("ʙᴀᴄᴋ", callback_data=f"pmnext_{req}_{key}_{off_set}"),
+             InlineKeyboardButton(f"⌧ Tʜᴇ Eɴᴅ {round(int(offset) / 10) + 1} / {round(total / 10)}",
                                   callback_data="pages")]
         )
     elif off_set is None:
         btn.append(
-            [InlineKeyboardButton(f"🗓 {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
-             InlineKeyboardButton("𝐍𝐄𝐗𝐓 ⏩", callback_data=f"pmnext_{req}_{key}_{n_offset}")])
+            [InlineKeyboardButton(f"🎭 {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
+             InlineKeyboardButton("ɴᴇxᴛ", callback_data=f"pmnext_{req}_{key}_{n_offset}")])
     else:
         btn.append(
             [
-                InlineKeyboardButton("⏪ 𝐁𝐀𝐂𝐊", callback_data=f"pmnext_{req}_{key}_{off_set}"),
-                InlineKeyboardButton(f"🗓 {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
-                InlineKeyboardButton("𝐍𝐄𝐗𝐓 ⏩", callback_data=f"pmnext_{req}_{key}_{n_offset}")
+                InlineKeyboardButton("ʙᴀᴄᴋ", callback_data=f"pmnext_{req}_{key}_{off_set}"),
+                InlineKeyboardButton(f"🎭 {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
+                InlineKeyboardButton("ɴᴇxᴛ", callback_data=f"pmnext_{req}_{key}_{n_offset}")
             ],
         )
     try:
@@ -203,7 +203,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer("കൗതുകം അല്പം കൂടുതലാണല്ലേ 🤨", show_alert=True)
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('➕ ADD ME TO YOUR GROUP  ➕', url=f'http://t.me/{client.username}?startgroup=true')
+            InlineKeyboardButton('➕ ADD ME TO YOUR GROUPS  ➕', url=f'http://t.me/{client.username}?startgroup=true')
             ],[
             InlineKeyboardButton('HELP', callback_data='help'),
             InlineKeyboardButton('ABOUT', callback_data='about')
@@ -298,7 +298,7 @@ async def auto_filter(client, msg):
     else:
         return         
     btn = [[
-        InlineKeyboardButton(text=f"[{get_size(file.file_size)}] {file.file_name}",
+        InlineKeyboardButton(text=f"{get_size(file.file_size)} {file.file_name}",
             callback_data=f'file#{file.file_id}')
         ] for file in files ]               
                                    
@@ -306,9 +306,9 @@ async def auto_filter(client, msg):
         key = f"{message.chat.id}-{message.id}"
         BUTTONS[key] = search
         req = message.from_user.id if message.from_user else 0
-        btn.append([InlineKeyboardButton(text=f"🗓 1/{round(int(total_results) / 10)}", callback_data="pages"), InlineKeyboardButton(text="𝐍𝐄𝐗𝐓 ⏩", callback_data=f"next_{req}_{key}_{offset}")])
+        btn.append([InlineKeyboardButton(text=f"🎭 1/{round(int(total_results) / 10)}", callback_data="pages"), InlineKeyboardButton(text="𝐍𝐄𝐗𝐓 ⏩", callback_data=f"next_{req}_{key}_{offset}")])
     else:
-        btn.append( [InlineKeyboardButton(text="🗓 1/1", callback_data="pages")])    
+        btn.append( [InlineKeyboardButton(text="🎭 1/1", callback_data="pages")])    
     cap = f"Here is what i found for your query {search}"
     try:
         await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
@@ -342,9 +342,9 @@ async def pm_auto_filter(client, msg):
         key = f"{message.chat.id}-{message.id}"
         PM_BUTTONS[key] = search
         req = message.from_user.id if message.from_user else 0
-        btn.append([InlineKeyboardButton(text=f"🗓 1/{round(int(total_results) / 10)}", callback_data="pages"), InlineKeyboardButton(text="𝐍𝐄𝐗𝐓 ⏩", callback_data=f"pmnext_{req}_{key}_{offset}")])
+        btn.append([InlineKeyboardButton(text=f"🎭 1/{round(int(total_results) / 10)}", callback_data="pages"), InlineKeyboardButton(text="𝐍𝐄𝐗𝐓 ⏩", callback_data=f"pmnext_{req}_{key}_{offset}")])
     else:
-        btn.append( [InlineKeyboardButton(text="🗓 1/1", callback_data="pages")])    
+        btn.append( [InlineKeyboardButton(text="🎭 1/1", callback_data="pages")])    
     cap = f"Here is what i found for your query {search}"
     try:
         await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
