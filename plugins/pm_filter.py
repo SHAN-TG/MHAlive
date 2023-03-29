@@ -359,7 +359,7 @@ async def pm_auto_filter(client, msg):
     else:
         return         
     btn = [[
-        InlineKeyboardButton(text=f"[{get_size(file.file_size)}] {file.file_name}",
+        InlineKeyboardButton(text=f"{get_size(file.file_size)} {file.file_name}",
             callback_data=f'pmfile#{file.file_id}')
         ] for file in files ]               
                                    
