@@ -10,7 +10,7 @@ PICS = ["https://graph.org/file/3a1aa1ef5e9ffae83b6c8.jpg"]
 # Admins, Channels & Users
 ADMINS = [5368018929, 1620134746]
 CHANNELS = int(-1001540443335)
-AUTH_GROUP = int(-1001662604194)
+AUTH_CHANNEL = int(-1001582264222)
 
 
 # MongoDB information
