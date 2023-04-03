@@ -25,7 +25,11 @@ COLLECTION_NAME_2 = "Telegram_files"
 LOG_CHANNEL = int(-1001501704586)
 SUPPORT_CHAT = "MoviesHub_Discuss"
 
-CUSTOM_FILE_CAPTION = """<code>{file_name}</code>"""
+CUSTOM_FILE_CAPTION = """<code>{file_name}</code>
+
+<b>@CinemaKendram | @MH_LinkZ</b>
+
+<a href=https://t.me/+YWtHkQpVOjMxNTg1>[𝗖𝗜𝗡𝗘𝗠𝗔 𝗛𝗨𝗕 🍿]</a>"""
 
 SPELL_CHECK_REPLY = False
 
