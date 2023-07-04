@@ -23,7 +23,7 @@ COLLECTION_NAME_2 = "Telegram_files"
 
 # Others
 LOG_CHANNEL = int(-1001501704586)
-SUPPORT_CHAT = "SHAN_TG"
+SUPPORT_CHAT = "MoviesHub_Discuss"
 
 CUSTOM_FILE_CAPTION = """<code>{file_name}</code>
 
